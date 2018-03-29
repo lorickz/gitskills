@@ -22,3 +22,14 @@ git log --graph --pretty=oneline --abbrev-commit 查看分支合并图
 git merge --no-ff -m "普通模式合并分支管理策略（不用fast forward模式）" dev     #要加上-m，因为这样的合并会创建一个新的commit
 
 ######修复bug issue-101
+
+######修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；
+
+######当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。
+git stash #把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+git stash list #工作现场查看
+git stash apply #恢复工作现场（git stash apply stash@{0}）
+git stash drop #删除工作现场
+git stash pop #恢复的同时把stash内容也删了
+
+
