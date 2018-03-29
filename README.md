@@ -13,3 +13,5 @@ git branch -d <name> 删除分支
 
 ######当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
 git log --graph --pretty=oneline --abbrev-commit 查看分支合并图
+
+######分支管理策略测试
