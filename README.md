@@ -15,3 +15,4 @@ git branch -d <name> 删除分支
 git log --graph --pretty=oneline --abbrev-commit 查看分支合并图
 
 ######分支管理策略测试
+######修复bug issue-101
