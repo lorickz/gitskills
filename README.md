@@ -32,4 +32,6 @@ git stash apply #恢复工作现场（git stash apply stash@{0}）
 git stash drop #删除工作现场
 git stash pop #恢复的同时把stash内容也删了
 
+######我是git另一个用户添加的修改
+
 
