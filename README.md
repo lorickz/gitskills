@@ -36,4 +36,14 @@ git stash pop #恢复的同时把stash内容也删了
 ######我是git另一个用户添加的修改
 ######解决冲突完成
 
+git remote -v #查看远程库信息（本地新建的分支如果不推送到远程，对其他人就是不可见的）
+git checkout -b branch-name origin/branch-name #在本地创建和远程分支对应的分支，本地和远程分支的名称最好一致
+git push origin branch-name #从本地推送分支（如果推送失败，因为远程分支比你的本地更新，先用git pull抓取远程的新提交，解决冲突提交后再psuh）
+git pull #从远程抓取分支
+######如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to=origin/branch-name branch-name后再git pull
+
+
+
+
+
 
